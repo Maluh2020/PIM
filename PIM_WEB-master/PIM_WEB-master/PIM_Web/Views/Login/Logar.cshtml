@@ -1,0 +1,74 @@
+﻿@model PIM_Web.Model.LoginModel
+
+@{
+    ViewBag.Title = "Logar";
+    Layout = null;
+}
+
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    
+
+    h2 {
+        text-align: center;
+    }
+
+
+    h4 {
+        text-align: center;
+    }
+
+    label {
+        text-align: center;
+    }
+
+    
+    }
+</style>
+<h1>>Blockchain Technology<</h1>
+<h2>Suas transações com segurança e comodidade.</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <div class="form-horizontal">
+        <h3>Login</h3>
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Usuario, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Usuario, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Usuario, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Senha, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "form-control", @type="password"} })
+                @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Logar" class="btn btn-default" />
+            </div>
+        </div>
+        <h2 style="color:red">@ViewBag.Error</h2>
+        <h2 style="color:dodgerblue">@ViewBag.Sucess</h2>
+
+    </div>
+}
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+<div>
+    @*@Html.ActionLink("Back to List", "Index")*@
+</div>

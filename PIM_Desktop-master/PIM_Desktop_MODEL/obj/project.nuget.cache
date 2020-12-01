@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pCBE8W667oegw0fl2SpXOayhCwW5qW+Bak5gozzl6xG0dAqkadNSgbv9btTQRBQi6qtNKUsaUO3CUkb2vTCvTw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Erick\\Desktop\\PIM_Desktop-master\\PIM_Desktop_MODEL\\PIM_Desktop_MODEL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Erick\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Erick\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
